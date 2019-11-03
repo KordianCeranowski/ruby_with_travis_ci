@@ -1,5 +1,5 @@
 require 'minesweeper'
-RSpec.describe Minesweeper do
+RSpec.describe Board do
   it("transform1") do
     inp = ["+------+", "| *  * |", "|  *   |", "|    * |", "|   * *|", "| *  * |", "|      |", "+------+"]
     out = ["+------+", "|1*22*1|", "|12*322|", "| 123*2|", "|112*4*|", "|1*22*2|", "|111111|", "+------+"]
