@@ -6,7 +6,6 @@ class Board
         @@board.map! { |row| row.split('') }
         
         raise ArgumentError if @@board.map { |row| row.size != @@board[0].size }.include? true
-        p @@board[0].class
         raise ArgumentError unless valid_all_borders?
         raise ArgumentError if invalid_char?
   
