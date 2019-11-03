@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'difference_of_squares'
+require_relative '../lib/difference_of_squares'
 
 # Common test data version: 1.2.0 1b6851d
 class DifferenceOfSquaresTest < Minitest::Test

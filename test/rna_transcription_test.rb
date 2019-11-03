@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require_relative 'rna_transcription'
+require_relative '../lib/rna_transcription'
 
 # Common test data version: 1.3.0 294c831
 class RnaTranscriptionTest < Minitest::Test
