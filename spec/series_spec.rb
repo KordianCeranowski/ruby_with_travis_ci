@@ -66,6 +66,7 @@ RSpec.describe Series do
 			series = Series.new(slice_string)
 			expect { series.slices((slice_string.length + 1)) }.to(raise_error(ArgumentError))
 		end
+	end
 	context 'checking if slice sequence work properly' do
 		it("sequential slices") do
 			series = Series.new("1234")
