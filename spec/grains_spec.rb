@@ -14,22 +14,28 @@ RSpec.describe Grains do
 			it("64") { expect(Grains.square(64)).to(eq(9223372036854775808)) }
 		end
 		context 'when number is out of range' do
+		
 			it("square 0 raises an exception") do
 				expect { Grains.square(0) }.to(raise_error(ArgumentError))
 			end
+			
 			it("negative square raises an exception") do
 				expect { Grains.square(-1) }.to(raise_error(ArgumentError))
 			end
+			
 			it("square greater than 64 raises an exception") do
 				expect { Grains.square(65) }.to(raise_error(ArgumentError))
 			end
+			
 		end
 	end
 	describe '#total' do 
 		context 'when testing on max numbers' do
+		
 			it("returns the total number of grains on the board") do
 				expect(Grains.total).to(eq(18446744073709551615))
 			end
+			
 		end
 	end
 end
