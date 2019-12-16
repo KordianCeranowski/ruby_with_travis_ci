@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'difference_of_squares'
 
 RSpec.describe Squares do

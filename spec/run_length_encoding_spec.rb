@@ -1,7 +1,7 @@
 require 'run_length_encoding'
 
 RSpec.describe RunLengthEncoding do
-	describe '.encode' do
+	describe '#encode' do
 		context 'when checking if encoding generate correct output chars' do
 			it("encode empty string") do
 				input = ""
@@ -35,7 +35,7 @@ RSpec.describe RunLengthEncoding do
 			end
 		end
 	end
-	describe '.decode' do
+	describe '#decode' do
 		context 'when checking if decoding returns correct string' do
 			it("decode empty string") do
 				input = ""
