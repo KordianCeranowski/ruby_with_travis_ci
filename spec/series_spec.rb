@@ -1,7 +1,7 @@
 require 'series' 
 
 RSpec.describe Series do
-	RSpec.describe '.slices' do
+	describe '.slices' do
 		context 'when given a string to slice' do
 			it("simple slices of one") do
 				series = Series.new("01234")
